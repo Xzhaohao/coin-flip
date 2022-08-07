@@ -47,5 +47,9 @@ Debug
 /Debug
 Profile
 /Profile
+Release
+/Release
 cmake-build-debug
 /cmake-build-debug
+
+*.user

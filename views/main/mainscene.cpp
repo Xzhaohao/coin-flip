@@ -15,6 +15,8 @@ MainScene::MainScene(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainScen
         this->close();
     });
 
+    auto *startSound = new QSound(":/assets/TapButtonSound.wav", this);
+
     // 开始按钮
     auto *startButton = new MyPushButton(":/assets/MenuSceneStartButton.png");
     startButton->setParent(this);
@@ -27,16 +29,21 @@ MainScene::MainScene(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainScen
 
     // 监听选择选择关卡的返回按钮的信号
     connect(chooseScene, &ChooseLevelScene::chooseSceneBack, this, [=]() {
+        this->setGeometry(chooseScene->geometry());
         chooseScene->hide();
         this->show();
     });
 
     connect(startButton, &MyPushButton::clicked, [=]() {
+        startSound->play();
+
         startButton->zoom(1);
         startButton->zoom(-1);
 
         // 延迟进入下一个页面
         QTimer::singleShot(500, this, [=]() {
+            chooseScene->setGeometry(this->geometry());
+
             this->hide();
             chooseScene->show();
         });

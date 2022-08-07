@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui multimedia
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -13,13 +13,19 @@ RC_ICONS += logo.ico
 SOURCES += \
     main.cpp \
     components/button/myPushButton.cpp \
+    components/button/MyCoin.cpp \
     views/chooseLevel/ChooseLevelScene.cpp \
-    views/main/mainscene.cpp
+    views/main/mainscene.cpp \
+    views/play/PlayScene.cpp \
+    data/DataConfig.cpp
 
 HEADERS += \
     components/button/myPushButton.h \
+    components/button/MyCoin.h \
     views/chooseLevel/ChooseLevelScene.h \
-    views/main/mainscene.h
+    views/main/mainscene.h \
+    views/play/PlayScene.h \
+    data/DataConfig.h
 
 FORMS += \
     views/main/mainscene.ui

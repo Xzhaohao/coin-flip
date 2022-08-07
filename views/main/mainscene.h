@@ -1,6 +1,7 @@
 #ifndef MAIN_SCENE_H
 #define MAIN_SCENE_H
 
+#include <QSound>
 #include "../chooseLevel/ChooseLevelScene.h"
 
 QT_BEGIN_NAMESPACE

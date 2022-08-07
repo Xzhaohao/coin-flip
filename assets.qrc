@@ -3,8 +3,7 @@
         <file>assets/BackButton.png</file>
         <file>assets/BackButtonSelected.png</file>
         <file>assets/BackButtonSound.wav</file>
-        <file>assets/bkmusic.mp3</file>
-        <file>assets/BoardNode(1).png</file>
+        <file>assets/BoardNode.png</file>
         <file>assets/Coin0001.png</file>
         <file>assets/Coin0002.png</file>
         <file>assets/Coin0003.png</file>
@@ -17,15 +16,12 @@
         <file>assets/LevelCompletedDialogBg.png</file>
         <file>assets/LevelIcon.png</file>
         <file>assets/LevelWinSound.wav</file>
-        <file>assets/mainBg.png</file>
-        <file>assets/mainBg1.png</file>
         <file>assets/MenuSceneBg.png</file>
         <file>assets/MenuSceneStartButton.png</file>
         <file>assets/OtherSceneBg.png</file>
         <file>assets/PlayLevelSceneBg.png</file>
         <file>assets/TapButtonSound.wav</file>
         <file>assets/Title.png</file>
-        <file>assets/window.png</file>
         <file>assets/winGain.mp3</file>
     </qresource>
 </RCC>
